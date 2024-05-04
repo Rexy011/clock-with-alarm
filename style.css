@@ -1,0 +1,54 @@
+body {
+    background-color: dodgerblue;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#timer {
+    font-size: 8rem;
+    font-weight: 800;
+    color: rgb(164, 255, 73);
+    text-shadow: 2px 4px rgb(0, 255, 247);
+    width: 700px;
+    text-align: center;
+    margin: 45px auto;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: blue;
+    color: blueviolet;
+    border: none;
+    border-radius: 35px;
+    font-size: 3rex;
+    font-weight: bold;
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgb(255, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0, 140, 255, 0.5);
+}
+
+button:active {
+    background-color: crimson;
+    box-shadow: none;
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+}
